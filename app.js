@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');  // index.jsの設定
 var usersRouter = require('./routes/users');  // users.jsの設定
 var helloRouter = require('./routes/hello');  // hello.jsの設定
 var notesRouter = require('./routes/notes');  // notes.jsの設定
+var catRouter = require('./routes/cat');  // cat.jsの設定
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);                  // index
 app.use('/users', usersRouter);             // index/users
 app.use('/hello', helloRouter);             // index/hello
 app.use('/notes', notesRouter);             // index/notes
+app.use('/cat', catRouter);                 // index/cat
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
