@@ -4,7 +4,7 @@ const cors = require('cors'); // corsミドルウェアを追加
 
 // 接続情報を設定
 const { MongoClient } = require("mongodb");
-const uri = "mongodb+srv://2201335001:awzSD5QMu8ohfhbM@test.0zdi10c.mongodb.net/?retryWrites=true&w=majority&appName=test";
+const uri = "********************";
 const client = new MongoClient(uri);
 
 // corsミドルウェアを使用
